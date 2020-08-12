@@ -1,4 +1,4 @@
-package com.dharyiswara.alodokter.ui
+package com.dharyiswara.alodokter.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
