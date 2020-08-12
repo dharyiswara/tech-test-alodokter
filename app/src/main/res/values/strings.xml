@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">tech-test-alodokter</string>
+    <string name="app_name">Alodokter Test</string>
+    <string name="string_email">Email</string>
+    <string name="string_password">Password</string>
+    <string name="string_login">Masuk</string>
+    <string name="string_title_login">Login</string>
+    <string name="string_error_empty_email_pass">Mohon masukkan email atau password terlebih dahulu</string>
+    <string name="string_error_email">Format email anda salah</string>
+    <string name="string_home">Home</string>
+    <string name="string_profile">Profile</string>
+    <string name="string_logout">Logout</string>
+    <string name="string_username">Dary Hilmy Iswara</string>
+    <string name="string_gender_male">Male</string>
+    <string name="string_phone_number">08123456789</string>
 </resources>
