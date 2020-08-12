@@ -1,13 +1,24 @@
 package com.dharyiswara.alodokter.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import com.dharyiswara.alodokter.R
+import com.dharyiswara.alodokter.base.BaseActivity
+import com.dharyiswara.alodokter.preferences.UserSession
+import com.dharyiswara.alodokter.ui.login.LoginActivity
+import org.jetbrains.anko.startActivity
+import org.koin.android.ext.android.inject
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    private val userSession by inject<UserSession>()
+
+    override fun getLayoutResId(): Int = R.layout.activity_main
+
+    override fun initView() {
+        super.initView()
+
+        if(!userSession.isLoggedIn){
+            startActivity<LoginActivity>()
+            finish()
+        }
     }
 }
