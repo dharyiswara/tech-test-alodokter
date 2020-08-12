@@ -6,4 +6,6 @@
     <string name="string_title_login">Login</string>
     <string name="string_error_empty_email_pass">Mohon masukkan email atau password terlebih dahulu</string>
     <string name="string_error_email">Format email anda salah</string>
+    <string name="string_home">Home</string>
+    <string name="string_profile">Profile</string>
 </resources>
