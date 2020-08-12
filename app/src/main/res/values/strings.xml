@@ -8,4 +8,8 @@
     <string name="string_error_email">Format email anda salah</string>
     <string name="string_home">Home</string>
     <string name="string_profile">Profile</string>
+    <string name="string_logout">Logout</string>
+    <string name="string_username">Dary Hilmy Iswara</string>
+    <string name="string_gender_male">Male</string>
+    <string name="string_phone_number">08123456789</string>
 </resources>
