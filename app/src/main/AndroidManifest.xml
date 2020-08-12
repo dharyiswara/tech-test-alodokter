@@ -22,6 +22,9 @@
         <activity
             android:name=".ui.login.LoginActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.detail.DetailImageActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

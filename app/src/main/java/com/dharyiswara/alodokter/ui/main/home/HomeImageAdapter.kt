@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.dharyiswara.alodokter.R
 import com.dharyiswara.alodokter.helper.loadFromUrl
 import com.dharyiswara.alodokter.model.Images
+import com.dharyiswara.alodokter.ui.detail.DetailImageActivity
 import kotlinx.android.synthetic.main.layout_item_image.view.*
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 class HomeImageAdapter : RecyclerView.Adapter<HomeImageAdapter.HomeImageViewHolder>() {
@@ -40,7 +42,10 @@ class HomeImageAdapter : RecyclerView.Adapter<HomeImageAdapter.HomeImageViewHold
                 ivImage.loadFromUrl(image.url)
 
                 llImage.setOnClickListener {
-                    context.toast("Go To Detail Image")
+                    context.startActivity<DetailImageActivity>(
+                        DetailImageActivity.IMAGES to imageList,
+                        DetailImageActivity.INDEX_IMAGES to adapterPosition
+                    )
                 }
             }
         }
