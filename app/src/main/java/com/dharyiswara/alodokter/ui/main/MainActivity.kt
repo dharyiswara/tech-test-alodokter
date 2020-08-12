@@ -1,7 +1,8 @@
-package com.dharyiswara.alodokter
+package com.dharyiswara.alodokter.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dharyiswara.alodokter.R
 
 class MainActivity : AppCompatActivity() {
 
